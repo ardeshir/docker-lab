@@ -1,4 +1,18 @@
 NAME     ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER        ERRORS
 node-1   -        virtualbox   Running   tcp://192.168.99.100:2376           v1.13.0-rc7   
 node-2   -        virtualbox   Running   tcp://192.168.99.101:2376           v1.13.0-rc7   
-node-3   -        virtualbox   Running   tcp://192.168.99.102:2376           v1.13.0-rc7   
+node-3   -        virtualbox   Running   tcp://192.168.99.102:2376           v1.13.0-rc7  
+
+Univrsio-2:dockerz administrator$ eval $(docker-machine env node-1)
+Univrsio-2:dockerz administrator$ docker swarm init \
+> --advertise-addr $(docker-machine ip node-1)
+Swarm initialized: current node (ujyal48fv8avmapvmkugjj6p9) is now a manager.
+
+To add a worker to this swarm, run the following command:
+
+    docker swarm join \
+    --token SWMTKN-1-6bkbaguvw42vq7sw1ir0fwbot25iaoeccckeiuxs5nifo0mmbg-55sp9gv94v6bo1inw98ug87g1 \
+    192.168.99.100:2377
+
+To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
+

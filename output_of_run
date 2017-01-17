@@ -20,3 +20,9 @@ Univrsio-2:dockerz administrator$ chmod +x join.sh
 Univrsio-2:dockerz administrator$ ./join.sh
 This node joined a swarm as a worker.
 This node joined a swarm as a worker.
+
+Univrsio-2:dockerz administrator$ docker-machine ls
+NAME     ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER        ERRORS
+node-1   *        virtualbox   Running   tcp://192.168.99.100:2376           v1.13.0-rc7   
+node-2   -        virtualbox   Running   tcp://192.168.99.101:2376           v1.13.0-rc7   
+node-3   -        virtualbox   Running   tcp://192.168.99.102:2376           v1.13.0-rc7   

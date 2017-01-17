@@ -1,0 +1,4 @@
+NAME     ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER        ERRORS
+node-1   -        virtualbox   Running   tcp://192.168.99.100:2376           v1.13.0-rc7   
+node-2   -        virtualbox   Running   tcp://192.168.99.101:2376           v1.13.0-rc7   
+node-3   -        virtualbox   Running   tcp://192.168.99.102:2376           v1.13.0-rc7   

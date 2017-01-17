@@ -16,3 +16,7 @@ To add a worker to this swarm, run the following command:
 
 To add a manager to this swarm, run 'docker swarm join-token manager' and follow the instructions.
 
+Univrsio-2:dockerz administrator$ chmod +x join.sh
+Univrsio-2:dockerz administrator$ ./join.sh
+This node joined a swarm as a worker.
+This node joined a swarm as a worker.

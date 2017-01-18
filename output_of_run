@@ -25,4 +25,16 @@ Univrsio-2:dockerz administrator$ docker-machine ls
 NAME     ACTIVE   DRIVER       STATE     URL                         SWARM   DOCKER        ERRORS
 node-1   *        virtualbox   Running   tcp://192.168.99.100:2376           v1.13.0-rc7   
 node-2   -        virtualbox   Running   tcp://192.168.99.101:2376           v1.13.0-rc7   
-node-3   -        virtualbox   Running   tcp://192.168.99.102:2376           v1.13.0-rc7   
+node-3   -        virtualbox   Running   tcp://192.168.99.102:2376           v1.13.0-rc7  
+
+Univrsio-2:dockerz administrator$ docker network create --driver overlay go-service
+ka1usj7d3xw05zkzrq3ny3f8s
+Univrsio-2:dockerz administrator$ docker network ls
+NETWORK ID          NAME                DRIVER              SCOPE
+eb1ccae6d2a8        bridge              bridge              local
+85d5f87a6ee0        docker_gwbridge     bridge              local
+ka1usj7d3xw0        go-service          overlay             swarm
+7887fc63fda3        host                host                local
+csq8h4itk4wc        ingress             overlay             swarm
+07860a52f833        none                null                local
+ 
